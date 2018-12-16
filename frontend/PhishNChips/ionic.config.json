@@ -1,0 +1,7 @@
+{
+  "name": "EduKate",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

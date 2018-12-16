@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar> <ion-title>Create a photo</ion-title> </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="wrapper" *ngIf="!isAnswerSentSuccessfully && !isFishingEmail " >
+
+
+    <div class='processing-wrapper' style="padding-top:65%;">
+
+      <ion-spinner></ion-spinner>
+      
+    </div>
+
+
+  </ion-list>
+  <div class="upload-wrapper" *ngIf="isAnswerSentSuccessfully">
+    <img src="https://cdn.georgechalhoub.com/oxfordhack2018/Correct.png" />
+    
+    <h2>No Phishing Detected</h2>
+
+    <!--<button class="upload-button" ion-button (click)="go_back()">Go Back...</button>-->
+  </div>
+
+  <div class="upload-wrapper" *ngIf="isFishingEmail">
+    <img src="https://cdn.georgechalhoub.com/hackkings5/wrong.png" />
+    
+    <h2>Phishing Detected</h2>
+
+    <!--<button class="upload-button" ion-button (click)="go_back()">Go Back...</button>-->
+  </div>
+
+
+
+
+</ion-content>

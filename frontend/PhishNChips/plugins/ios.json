@@ -1,0 +1,51 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-telerik-imagepicker": {
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "We need to use your camera to upload pictures as Questions Answers.",
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-photo-library": {
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "To choose photos",
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "com-badrit-base64": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    },
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.edukate.hybrid"
+    }
+  }
+}

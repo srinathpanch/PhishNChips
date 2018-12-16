@@ -1,0 +1,2 @@
+class InvalidPasswordException(BaseException):
+    pass

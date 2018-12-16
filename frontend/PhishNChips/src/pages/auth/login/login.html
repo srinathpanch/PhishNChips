@@ -1,0 +1,40 @@
+<ion-header>
+  </ion-header>
+  
+  <ion-content>
+
+
+    <div class="wrapper">
+
+
+      <div class="login-container">
+
+          <ion-img width=130 height=145 src="https://cdn.georgechalhoub.com/hackkings5/logo.png"></ion-img>
+
+        <ion-item>
+
+
+
+          <ion-label color="primary" floating>Email</ion-label>
+          <ion-input type="email" class="input-email" [(ngModel)]="userData.email"> </ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label color="primary" floating>Password</ion-label>
+          <ion-input type="password" class="input-password" [(ngModel)]="userData.password"> </ion-input>
+        </ion-item>
+  <br>  <br>
+        <div class="buttons-container">
+
+          <button (click)="login()" ion-button class="btn-login">Login</button>
+          <button (click)="signUp()" ion-button class="btn-register">Sign Up</button>
+        </div>
+
+        <br><br>
+        <button (click)="forgotPassword()" ion-button clear class="btn-forgot-password">
+          Forgot your password?
+        </button>
+      </div>
+    </div>
+  </ion-content>
+  

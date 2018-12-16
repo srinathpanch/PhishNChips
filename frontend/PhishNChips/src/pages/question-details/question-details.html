@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Training</ion-title>
+
+
+  <ion-buttons end>
+    <button ion-button icon-only (click)="addAnswer()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-buttons>
+  
+  </ion-navbar>
+
+
+
+
+</ion-header>
+
+<br/><br/>
+
+<br/><br/>
+
+<ion-content>
+
+    <ion-card>
+
+
+
+<ion-card-header style='font-size:2.8rem;'   *ngIf="resultsShowPlease" >
+    Results: {{points}}/5
+</ion-card-header>
+
+
+
+
+
+<ion-card-header style='font-size:2.8rem;'   *ngIf="showQuestion1" >
+      Email: 1/5
+</ion-card-header>
+<ion-card-header style='font-size:2.8rem;'   *ngIf="showQuestion2" >
+    Email: 2/5
+</ion-card-header>
+
+<ion-card-header style='font-size:2.8rem;'   *ngIf="showQuestion3" >
+    Email: 3/5
+</ion-card-header>
+
+<ion-card-header style='font-size:2.8rem;'   *ngIf="showQuestion4" >
+    Email: 4/5
+</ion-card-header>
+
+<ion-card-header style='font-size:2.8rem;'   *ngIf="showQuestion5" >
+    Email: 5/5 
+</ion-card-header>
+
+    </ion-card>
+
+        <button class="upload-button"  *ngIf="resultsShowPlease"  ion-button (click)="go_back()">Go Back...</button>
+
+
+<br/> <br/>
+  <ion-card  *ngIf="showQuestion1" > 
+  <ion-card-content style='font-size:2rem;' >
+      {{email1content}}
+  </ion-card-content>
+    </ion-card>
+
+  <ion-card  *ngIf="showQuestion2" > 
+        <ion-card-content style='font-size:2rem;' >
+            {{email2content}}
+        </ion-card-content>
+    </ion-card>
+
+
+    <ion-card  *ngIf="showQuestion3" > 
+        <ion-card-content style='font-size:2rem;' >
+            {{email3content}}
+        </ion-card-content>
+    </ion-card>
+
+
+    <ion-card  *ngIf="showQuestion4" > 
+        <ion-card-content style='font-size:2rem;' >
+            {{email4content}}
+        </ion-card-content>
+    </ion-card>
+
+
+    <ion-card  *ngIf="showQuestion5" > 
+        <ion-card-content style='font-size:2rem;' >
+            {{email5content}}
+        </ion-card-content>
+    </ion-card>
+
+
+
+    
+    <br><br>
+
+    <ion-card *ngIf="showQuestion1"  >
+    <button ion-button color="danger" (click)="goToQuestion(2,true)" style='font-size:1.7rem;'  >Phishing</button>
+    <button ion-button color="secondary"  (click)="goToQuestion(2,false)" style='font-size:1.7rem;'  > Non-Phishing</button>
+    <button ion-button   (click)="goToQuestion(2,'Idk')"  style='font-size:1.7rem;' >Don't Know </button>
+    </ion-card>
+
+    <ion-card *ngIf="showQuestion2"  >
+        <button ion-button color="danger" (click)="goToQuestion(3,true)" style='font-size:1.7rem;'  >Phishing</button>
+        <button ion-button color="secondary"  (click)="goToQuestion(3,false)" style='font-size:1.7rem;'  > Non-Phishing</button>
+        <button ion-button   (click)="goToQuestion(3,'Idk')"  style='font-size:1.7rem;' >Don't Know </button>
+        </ion-card>
+
+
+        <ion-card *ngIf="showQuestion3"  >
+            <button ion-button color="danger" (click)="goToQuestion(4,true)" style='font-size:1.7rem;'  >Phishing</button>
+            <button ion-button color="secondary"  (click)="goToQuestion(4,false)" style='font-size:1.7rem;'  > Non-Phishing</button>
+            <button ion-button   (click)="goToQuestion(4,'Idk')"  style='font-size:1.7rem;' >Don't Know </button>
+            </ion-card>
+
+
+            <ion-card *ngIf="showQuestion4"  >
+                <button ion-button color="danger" (click)="goToQuestion(5,true)" style='font-size:1.7rem;'  >Phishing</button>
+                <button ion-button color="secondary"  (click)="goToQuestion(5,false)" style='font-size:1.7rem;'  > Non-Phishing</button>
+                <button ion-button   (click)="goToQuestion(5,'Idk')"  style='font-size:1.7rem;' >Don't Know </button>
+                </ion-card>
+
+
+                <ion-card *ngIf="showQuestion5"  >
+                    <button ion-button color="danger" (click)="goToQuestion(6,true)" style='font-size:1.7rem;'  >Phishing</button>
+                    <button ion-button color="secondary"  (click)="goToQuestion(6,false)" style='font-size:1.7rem;'  > Non-Phishing</button>
+                    <button ion-button   (click)="goToQuestion(6,'Idk')"  style='font-size:1.7rem;' >Don't Know </button>
+                    </ion-card>
+  <ion-list>
+
+
+    <button ion-item *ngFor="let item of question.list; let idx = index"  (click)="showAnswer(item.split('|||')[1] )">
+      {{ (idx+1) + '. ' }}{{ item.split('|||')[0] }}
+    </button>  
+
+
+  </ion-list>
+</ion-content>

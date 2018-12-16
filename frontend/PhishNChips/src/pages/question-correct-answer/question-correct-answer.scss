@@ -1,0 +1,22 @@
+page-question-correct-answer {
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        height:100%
+      }
+    
+      .wrapper canvas{
+        width: 50%;
+        height: auto
+      }
+    
+
+      .answer{
+          color:orange;
+          display: inline
+      }
+}

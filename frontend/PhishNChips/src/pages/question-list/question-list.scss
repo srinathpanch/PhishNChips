@@ -1,0 +1,37 @@
+page-question-list {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    
+      .portrait-item-menu {
+        width: 44vw;
+        height: 44vw;
+      }
+      .landscape-item-menu {
+        width: 44vh;
+        height: 44vh;
+      }
+    
+      .item-menu {
+        border: 1px solid gray;
+        padding: 12px;
+        margin: 8px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+      }
+    
+      .portrait-item-menu-image {
+        width: 38vw;
+        height: 38vw;
+      }
+      .landscape-item-menu-image {
+        width: 38vh;
+        height: 38vh;
+      }
+}

@@ -1,0 +1,57 @@
+page-question-add-answer {
+  .answer-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .answer-input {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height:100%
+  }
+
+
+  .processing-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+ 
+  }
+
+
+
+  .upload-wrapper img{
+    width: 50%;
+    height: auto
+  }
+
+  .answer.image{
+    height:40vw;
+    width:40vw;
+  }
+
+  .upload-button{
+    margin-top:16px;
+  }
+}

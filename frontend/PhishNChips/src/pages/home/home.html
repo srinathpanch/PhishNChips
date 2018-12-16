@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Main Menu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="wrapper">
+    <ng-container *ngFor="let item of menuItems">
+      <div
+        [ngClass]="{ 'portrait-item-menu': isPortrait, 'landscape-item-menu': !isPortrait }"
+        class="item-menu"
+        (click)="goTo(item.goTo)"
+        *ngIf="isTeacher || !item.isTeacherOnly"
+      >
+        <img
+          [ngClass]="{ 'portrait-item-menu-image': isPortrait, 'landscape-item-menu-image': !isPortrait }"
+          class="item-menu-image"
+          [src]="item.image"
+          alt=""
+        />
+        <span class="item-menu-title">{{ item.title }}</span>
+      </div>
+    </ng-container>
+  </div>
+</ion-content>
